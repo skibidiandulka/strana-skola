@@ -381,7 +381,8 @@ main {
 
 .placeholder-frame,
 .image-placeholder,
-.mini-placeholder {
+.mini-placeholder,
+.image-frame {
   display: grid;
   place-items: center;
   background:
@@ -410,6 +411,18 @@ main {
   font-size: 0.84rem;
   font-weight: 800;
   letter-spacing: 0.14em;
+}
+
+.image-frame {
+  overflow: hidden;
+  border: 1px solid rgba(17, 31, 27, 0.12);
+  background: rgba(255, 255, 255, 0.72);
+}
+
+.content-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .split-band {
@@ -538,16 +551,19 @@ main {
   grid-column: span 2;
 }
 
-.image-placeholder {
+.image-placeholder,
+.image-frame {
   min-height: 100%;
   min-height: 220px;
 }
 
-.image-placeholder.portrait {
+.image-placeholder.portrait,
+.image-frame.portrait {
   min-height: 320px;
 }
 
-.image-placeholder.compact {
+.image-placeholder.compact,
+.image-frame.compact {
   min-height: 300px;
 }
 
@@ -629,7 +645,8 @@ main {
   margin-bottom: 1rem;
 }
 
-.candidate-top .image-placeholder {
+.candidate-top .image-placeholder,
+.candidate-top .image-frame {
   min-height: 220px;
 }
 
