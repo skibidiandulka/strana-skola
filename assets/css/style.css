@@ -37,6 +37,21 @@ body {
   line-height: 1.6;
 }
 
+@media (min-width: 921px) {
+  body {
+    cursor: url("../img/cursor-frog.png") 10 8, auto;
+  }
+
+  a,
+  button,
+  input,
+  textarea,
+  select,
+  label {
+    cursor: url("../img/cursor-frog.png") 10 8, pointer;
+  }
+}
+
 body::before {
   content: "";
   position: fixed;
