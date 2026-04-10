@@ -404,6 +404,11 @@ main {
   margin-top: 1.4rem;
 }
 
+.hero-media-frame {
+  min-height: 280px;
+  margin-top: 1.4rem;
+}
+
 .placeholder-frame span,
 .image-placeholder span,
 .mini-placeholder span {
@@ -641,13 +646,34 @@ main {
   display: grid;
   grid-template-columns: 180px 1fr;
   gap: 1rem;
-  align-items: start;
+  align-items: stretch;
   margin-bottom: 1rem;
 }
 
 .candidate-top .image-placeholder,
 .candidate-top .image-frame {
-  min-height: 220px;
+  min-height: 280px;
+  height: 280px;
+}
+
+.candidate-photo {
+  object-position: center 18%;
+}
+
+.candidate-photo-irind {
+  object-position: center 12%;
+}
+
+.candidate-photo-vit {
+  object-position: center 18%;
+}
+
+.candidate-photo-adam {
+  object-position: center 16%;
+}
+
+.candidate-photo-stepan {
+  object-position: center 14%;
 }
 
 .timeline-panel {
@@ -794,6 +820,14 @@ main {
 
   .candidate-top {
     grid-template-columns: 1fr;
+  }
+
+  .candidate-photo-vit {
+    object-position: center 10%;
+  }
+
+  .candidate-photo-adam {
+    object-position: center 8%;
   }
 
   .mascot-logo {
